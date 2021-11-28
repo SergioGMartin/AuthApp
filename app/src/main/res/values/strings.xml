@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">AuthApp</string>
+    <string name="label1">Matricule</string>
+    <string name="label2">Nom</string>
+    <string name="label3">Salaire</string>
+    <string name="btnInsert">Insert</string>
+    <string name="btnSearch">Search</string>
+    <string name="btnDelete">Delete</string>
+    <string name="btnUpdate">Update</string>
+    <string name="btnLog">Logout</string>
+    <string name="LogName">Saisir Login</string>
+    <string name="LogPassword">Saisir Password</string>
+    <string name="LogConnect">Connect</string>
+    <string name="LogCreate">Create New Account</string>
 </resources>
