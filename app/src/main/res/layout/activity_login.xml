@@ -38,4 +38,10 @@
         android:fontFamily="cursive"
         android:textStyle="bold"
         android:text="@string/LogCreate" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
 </LinearLayout>

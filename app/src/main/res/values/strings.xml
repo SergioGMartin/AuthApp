@@ -12,4 +12,5 @@
     <string name="LogPassword">Saisir Password</string>
     <string name="LogConnect">Connect</string>
     <string name="LogCreate">Create New Account</string>
+
 </resources>
