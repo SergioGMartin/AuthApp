@@ -47,9 +47,18 @@
         android:textStyle="bold"
         android:text="@string/btnLoginPhone" />
 
+    <Button
+        android:id="@+id/btnFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:text="@string/btnFacebook" />
+
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btnGoogle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
+
 </LinearLayout>

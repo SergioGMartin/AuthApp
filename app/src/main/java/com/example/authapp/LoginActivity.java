@@ -39,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN=1;
     private Button btnLogPhone;
+    private Button btnFacebook;
 
 
 
@@ -78,6 +79,9 @@ public class LoginActivity extends AppCompatActivity {
         });
         btnLogPhone.setOnClickListener((evt)->{
             startActivity(new Intent(LoginActivity.this,LoginPhoneActivity.class));
+        });
+        btnFacebook.setOnClickListener((evt)->{
+            startActivity(new Intent(LoginActivity.this,LoginFacebookActivity.class));
         });
     }
     //autentificacion google
@@ -146,7 +150,7 @@ public class LoginActivity extends AppCompatActivity {
         auth=FirebaseAuth.getInstance();
         btnGoogle=findViewById(R.id.btnGoogle);
         btnLogPhone=findViewById(R.id.btnLogPhone);
-
+        btnFacebook=findViewById(R.id.btnFacebook);
     }
 
     private void createUser(String email, String pass){

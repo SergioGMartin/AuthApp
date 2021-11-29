@@ -10,6 +10,9 @@ import android.widget.Toast;
 
 import com.example.authapp.bean.Salary;
 import com.example.authapp.dao.DaoSalaryManager;
+import com.facebook.login.LoginFragment;
+import com.facebook.login.LoginManager;
+import com.facebook.login.widget.LoginButton;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnLogout;
     private Intent intent;
     private String login;
+    private LoginButton logoutFacebook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(this,LoginActivity.class));
         });
+        logoutFacebook.setOnClickListener((evt)-> {
+            LoginManager.getInstance().logOut();
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(this,LoginActivity.class));
+        });
     }
 
     private void createView(){
@@ -77,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         btnList=findViewById(R.id.btnListSalary);
         btnLogout=findViewById(R.id.btnLogout);
         intent=getIntent();
+        logoutFacebook=findViewById(R.id.logoutFacebook);
     }
 
     private void getProfile(){
@@ -84,6 +94,11 @@ public class MainActivity extends AppCompatActivity {
             btnInsert.setEnabled(true);
             btnDelete.setEnabled(true);
             btnUpdate.setEnabled(true);
+        }
+        if(intent.getData()!=null){
+            logoutFacebook.setEnabled(true);
+        }else{
+            btnLogout.setEnabled(true);
         }
     }
 

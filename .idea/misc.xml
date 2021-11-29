@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Enjuto/AndroidStudioProjects/AuthApp/app/src/main/res/layout/activity_hachage.xml" value="0.190625" />
         <entry key="..\:/Users/Enjuto/AndroidStudioProjects/AuthApp/app/src/main/res/layout/activity_list_salary.xml" value="0.12135416666666667" />
         <entry key="..\:/Users/Enjuto/AndroidStudioProjects/AuthApp/app/src/main/res/layout/activity_login.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/Enjuto/AndroidStudioProjects/AuthApp/app/src/main/res/layout/activity_login_facebook.xml" value="0.176" />
         <entry key="..\:/Users/Enjuto/AndroidStudioProjects/AuthApp/app/src/main/res/layout/activity_login_phone.xml" value="0.20108695652173914" />
         <entry key="..\:/Users/Enjuto/AndroidStudioProjects/AuthApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>

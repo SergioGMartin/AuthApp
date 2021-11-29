@@ -109,6 +109,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
+        android:enabled="false"
         android:text="@string/btnLog" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/logoutFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:enabled="false"/>
 
 </LinearLayout>

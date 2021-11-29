@@ -15,5 +15,9 @@
     <string name="btnLoginPhone">Login Phone</string>
     <string name="btnConnect">Connect</string>
     <string name="btnVerif">Get Captcha</string>
+    <string name="facebook_app_id">191132293223611</string>
+    <string name="fb_login_protocol_scheme">fb191132293223611</string>
+    <string name="btnFacebook">Login Facebook</string>
+
 
 </resources>
