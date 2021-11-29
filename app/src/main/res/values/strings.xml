@@ -12,5 +12,8 @@
     <string name="LogPassword">Saisir Password</string>
     <string name="LogConnect">Connect</string>
     <string name="LogCreate">Create New Account</string>
+    <string name="btnLoginPhone">Login Phone</string>
+    <string name="btnConnect">Connect</string>
+    <string name="btnVerif">Get Captcha</string>
 
 </resources>

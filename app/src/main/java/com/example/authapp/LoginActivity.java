@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     private SignInButton btnGoogle;
     private GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN=1;
+    private Button btnLogPhone;
 
 
 
@@ -74,6 +75,9 @@ public class LoginActivity extends AppCompatActivity {
         });
         btnGoogle.setOnClickListener((evt)->{
             signIn();
+        });
+        btnLogPhone.setOnClickListener((evt)->{
+            startActivity(new Intent(LoginActivity.this,LoginPhoneActivity.class));
         });
     }
     //autentificacion google
@@ -141,6 +145,7 @@ public class LoginActivity extends AppCompatActivity {
         btnCreate=findViewById(R.id.btnCreate);
         auth=FirebaseAuth.getInstance();
         btnGoogle=findViewById(R.id.btnGoogle);
+        btnLogPhone=findViewById(R.id.btnLogPhone);
 
     }
 

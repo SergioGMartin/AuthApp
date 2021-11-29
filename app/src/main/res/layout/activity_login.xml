@@ -39,6 +39,14 @@
         android:textStyle="bold"
         android:text="@string/LogCreate" />
 
+    <Button
+        android:id="@+id/btnLogPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:text="@string/btnLoginPhone" />
+
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btnGoogle"
         android:layout_width="wrap_content"

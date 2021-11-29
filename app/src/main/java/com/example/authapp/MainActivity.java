@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getProfile(){
-        if(login.startsWith("admin")){
+        if(login.contains("admin")){
             btnInsert.setEnabled(true);
             btnDelete.setEnabled(true);
             btnUpdate.setEnabled(true);
